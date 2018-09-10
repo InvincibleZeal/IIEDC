@@ -1,0 +1,19 @@
+body, .event-time > * {
+  margin: 0;
+  padding: 0;
+}
+
+/*  NEUTRAL LISTS */
+
+#anchors {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* NEUTRAL LINKS */
+
+#anchors a {
+  text-decoration: none;
+  color: inherit;
+}
