@@ -23,7 +23,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    @include mQ(1000px) {
+    @include mQ(900px) {
       flex-direction: column;
       .about-content-text {
         order: 2;
@@ -124,6 +124,7 @@ body {
     display:flex;
     cursor: pointer;
     margin: 200px 0;
+
     .about-img {
       height: 500px;
       overflow: hidden;
@@ -164,6 +165,24 @@ body {
       position: relative;
       z-index: 2;
       display: block !important;
+    }
+    @include mQ(900px){
+      display: block;
+      width: 100%;
+      .about-img {
+        margin: 20px 0;
+        width: 100%;
+        height: auto;
+        border: none;
+        img {
+          width: 100%;
+          height: auto;
+          box-shadow: 2px 8px 34px 13px rgba(0, 0, 0, 0.15);
+        }
+        .about-img-btn {
+          display: none;
+        }
+      }
     }
   }
 }
